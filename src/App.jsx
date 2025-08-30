@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
-import Posts from './Posts/Posts';
 import LoadPosts from './LoadPosts/LoadPosts';
+import LoadSubReddits from './LoadSubReddits/LoadSubReddits';
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
       </header>
       <article>
         <LoadPosts />
+        <LoadSubReddits />
       </article>
     </>
   )
