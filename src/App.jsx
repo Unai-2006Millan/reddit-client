@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
-import LoadPosts from './LoadPosts/LoadPosts';
-import LoadSubReddits from './LoadSubReddits/LoadSubReddits';
+import Posts from './Posts/Posts';
+import SubReddits from './SubReddits/SubReddits';
 
 function App() {
 
@@ -14,10 +14,10 @@ function App() {
         </div>
       </header>
       <article>
-        <LoadPosts />
+        <Posts />
         <div className='load-subreddits'>
           <h2>Subreddits</h2>
-          <LoadSubReddits />
+          <SubReddits />
         </div>
       </article>
     </>
