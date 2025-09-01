@@ -1,4 +1,4 @@
-import './SubReddits.css';
+import './Subreddits.css';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchSubreddits } from '../store/slices/subredditsSlice';
