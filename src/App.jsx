@@ -15,7 +15,10 @@ function App() {
       </header>
       <article>
         <LoadPosts />
-        <LoadSubReddits />
+        <div className='load-subreddits'>
+          <h2>Subreddits</h2>
+          <LoadSubReddits />
+        </div>
       </article>
     </>
   )

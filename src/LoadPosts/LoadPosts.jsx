@@ -39,16 +39,14 @@ function LoadPosts() {
     <div>
       <ul>
         {posts.map((post) => {
-          const { title, selftext, media, preview } = post.data;
+          const { title, selftext, media, preview, author, ups, num_comments } = post.data;
 
           return (
             <li className="post" key={post.data.id}>
               <h3>{title}</h3>
-              {/* Si el post tiene texto */}
               {selftext && <p>{selftext}</p>}
 
-              <div>
-                {/* Si el post tiene video */}
+              <div className='media-container'>
                 {media && media.reddit_video && (
                   <video
                     controls
@@ -60,9 +58,8 @@ function LoadPosts() {
                   </video>
                 )}
 
-                {/* Si el post tiene imágenes */}
                 {preview && preview.images && (
-                  <div>
+                  <>
                     {preview.images.map((image, index) => (
                       <img
                         key={index}
@@ -71,8 +68,12 @@ function LoadPosts() {
                         style={{ maxWidth: '100%', marginBottom: '1rem' }}
                       />
                     ))}
-                  </div>
+                  </>
                 )}
+              </div>
+              <div className='date-posted'>
+                <h5>Posted By {author}</h5>
+                <h5>👍 {ups} | 💬 {num_comments}</h5>
               </div>
             </li>
           );

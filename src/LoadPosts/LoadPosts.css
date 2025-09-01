@@ -16,15 +16,32 @@
 }
 
 .post img {
-  width: 70%;
+  width: 50%;
   height: auto;
   border-radius: 8px;
   margin-top: 1rem;
 }
 
 .post video {
-  width: 70%;
+  width: 50%;
   height: auto;
   border-radius: 8px;
   margin-top: 1rem;
 }
+
+.media-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  gap: 2rem;
+  align-items: center;
+}
+
+.date-posted {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 1rem;
+}
+
+

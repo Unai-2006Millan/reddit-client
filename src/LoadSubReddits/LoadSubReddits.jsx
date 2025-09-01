@@ -32,7 +32,6 @@ function LoadSubReddits() {
     }
     return (
         <div className='load-subreddits'>
-            <h2>Subreddits</h2>
             <ul>
                 {LoadSubReddits.map((subreddit) => {
                     const {display_name, title, icon_img} = subreddit.data;
